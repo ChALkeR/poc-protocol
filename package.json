@@ -1,0 +1,35 @@
+{
+  "name": "poc-protocol",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "eslint": "eslint --cache *.js src tests",
+    "mdlint": "remark -qf *.md docs",
+    "lint": "npm run eslint && npm run mdlint",
+    "test": "npm run lint && npm run flow",
+    "flow": "flow src",
+    "build": "babel -d build -q src",
+    "watch": "babel -d build -w src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChALkeR/poc-protocol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChALkeR/poc-protocol/issues"
+  },
+  "homepage": "https://github.com/ChALkeR/poc-protocol#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-eslint": "^6.0.4",
+    "babel-plugin-transform-flow-strip-types": "^6.14.0",
+    "babel-preset-es2015-node6": "^0.3.0",
+    "babel-preset-stage-3": "^6.3.13",
+    "eslint": "^3.4.0",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-flowtype": "^2.11.4",
+    "flow-bin": "^0.31.1",
+    "remark-cli": "^2.0.0",
+    "remark-lint": "^5.0.1"
+  }
+}
