@@ -31,5 +31,8 @@
     "flow-bin": "^0.31.1",
     "remark-cli": "^2.0.0",
     "remark-lint": "^5.0.1"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6"
   }
 }
